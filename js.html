@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Teste de JavaScript (Externo)</title>
+      <style type='text/css'>
+        #minhaDiv {
+          position:absolute;
+          top:0px;
+          left:0px;
+          width: 200px;
+          background-color: red;
+          text-align: center;
+        }
+        #demo{
+          background-color: azure;
+          font-size: 22px;
+        }
+      </style>
+    </head>
+    <body>
+      <br /> <p>O Programa JavaScript esta em um arquivo externo chamado de: 'main.js' na pasta assets/js/</p>
+      <p>Um exemplo de interatividade entre HTML, CSS e JavaScript.</p>
+      <p>Os botoes Mostra e Esconde sao exibidos alternadamente.</p>
+      <p>A data e hora atualiza-se com JavaScript.</p>
+      <p id='demo'></p>
+      <button type='button'
+        onclick='exibeData()'>Exibir Data/Hora(js externo)</button>
+      <div id='minhaDiv'>ASS - Desenvolvimento Web</div>
+      <button type="button" id='btnEsconde'
+        onclick="exibir(false)">Esconde</button>
+      <button type='button' id='btnMostra'
+        onclick="exibir(true)" style="display: none;">Mostra</button>
+    
+      <script type='text/JavaScript' src='assets/js/main.js'></script>
+    </body>
+  </html>
